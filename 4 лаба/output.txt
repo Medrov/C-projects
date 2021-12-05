@@ -1,0 +1,6 @@
+name = Islam; IPv4 = 192.123.456.789; isOnline = false; 
+name = Renat; IPv4 = 172.876.908.456; isOnline = true; 
+name = Son; IPv4 = 809.678.456.676; isOnline = true
+; 
+name = Victor; IPv4 = 152.890.567.789; isOnline = false; 
+name = Nikita; IPv4 = 678.890.576.156; isOnline = false; 

@@ -1,0 +1,1 @@
+net_devicies[count].name = malloc()
