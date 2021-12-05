@@ -463,6 +463,7 @@ void mainMenu() {
         printf("Так что по-братски сделай это\n");
         printf("Даю еще один шанс.");
         printf("\n");
+        
         mainMenu();
         break;
     case '3':
