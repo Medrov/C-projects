@@ -16,6 +16,7 @@ void insertItemByIndex(int length, struct net_device *net_devicies) {
     char *s = NULL;
     int index = 0;
     int temp = 0;
+    
     printf("¬ведите новую запись сетевого устройства: »м€, IPv4, isOnline\n");
     s = get_str();
     net_devicies = realloc(net_devicies, (length + 1) * sizeof *net_devicies);
