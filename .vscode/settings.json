@@ -28,7 +28,8 @@
     "random": "c",
     "string_view": "c",
     "stddef.h": "c",
-    "stdlib.h": "c"
+    "stdlib.h": "c",
+    "utils.h": "c"
   },
   "C_Cpp.errorSquiggles": "Disabled"
 }
