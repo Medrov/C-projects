@@ -29,7 +29,12 @@
     "string_view": "c",
     "stddef.h": "c",
     "stdlib.h": "c",
-    "utils.h": "c"
+    "utils.h": "c",
+    "array": "c",
+    "string": "c",
+    "system_error": "c",
+    "initializer_list": "c",
+    "utility": "c"
   },
   "C_Cpp.errorSquiggles": "Disabled"
 }

@@ -1,1 +1,1 @@
-struct net_device *net_devicies = NULL;
+ printf("Execution time = %.6f\n", time_taken);

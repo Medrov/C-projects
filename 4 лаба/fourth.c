@@ -348,7 +348,7 @@ void textInput()
     size_t length = 0;
     char line[128];
     FILE *file;
-    file = fopen("super_input.txt", "r");
+    file = fopen("input.txt", "r");
     net_devicies = malloc(sizeof *net_devicies * length);
     while (fgets(line, 128, file) != NULL)
     {
@@ -523,7 +523,8 @@ void mainMenu()
 
 int main()
 {
-    //system("chcp 1251");
+    // system("chcp 1251");
     mainMenu();
+    //textInput();
     return 0;
 }
