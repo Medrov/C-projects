@@ -34,7 +34,8 @@
     "string": "c",
     "system_error": "c",
     "initializer_list": "c",
-    "utility": "c"
+    "utility": "c",
+    "algorithm": "c"
   },
   "C_Cpp.errorSquiggles": "Disabled"
 }

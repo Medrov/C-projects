@@ -1,4 +1,4 @@
-#include "utils.h" 
+#include "utils.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -255,11 +255,10 @@ void deleteColumnByIndex(int **matrix, int length)
     }
 }
 
-void getCofactor(int n, int **matrix, int **temp, int p, int q)
-{   
+void getCofactor(int **matrix, int **temp, int p, int q, int n)
+{
     int i = 0, j = 0;
-  
-    
+
     for (int row = 0; row < n; row++)
     {
         for (int col = 0; col < n; col++)
@@ -274,7 +273,7 @@ void getCofactor(int n, int **matrix, int **temp, int p, int q)
                 }
             }
         }
-    } 
+    }
     if (count == n)
     {
         printf("Минор номер: %d\n", q + 1);
@@ -289,26 +288,28 @@ void getCofactor(int n, int **matrix, int **temp, int p, int q)
     }
 }
 
-int calculateMinors(int n, int **matrix)
+int calculateMinors(int **matrix, int n)
 {
     int D = 0;
     if (n == 1)
         return matrix[0][0];
 
-    int **temp = (int **)malloc(n * sizeof(int *));
+    int **temp = (int **)malloc(count * sizeof(int *));
     for (int i = 0; i < n; i++)
-        temp[i] = (int *)malloc(n * sizeof(int));
+        temp[i] = (int *)malloc(count * sizeof(int));
 
     int sign = 1;
-    for (int f = 0; f < n; f++)
-    {
-        getCofactor(n, matrix, temp, 0, f);
-        D += sign * matrix[0][f] * calculateMinors(n - 1, temp);
+    for (int f = 0; f < n; f++) {
+        getCofactor(matrix, temp, 0, f, n);
+        D += sign * matrix[0][f] * calculateMinors(temp, n - 1);
         sign = -sign;
     }
 
-    if (n + 1 == count) {
-    printf("Значение текущего минора: %d\n", D);
-    printf("\n");
+    if (n + 1 == count)
+    {
+        printf("Значение текущего минора: %d\n", D);
+        printf("\n");
     }
+
+    return D;
 }

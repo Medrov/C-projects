@@ -1,1 +1,1 @@
-N
+alculateMin
